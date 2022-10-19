@@ -2,9 +2,10 @@
     --offwhite: #F9F2E5;
     --backgroundwhite: #F6EDDD;
     --brown: #503c45;
-    --boldred: #F75D59;
+    --boldred: #be4b47;
     --peach: #DBAB85;
-    --lightbrown: #954d3f;
+    --warmbrown: #954d3f;
+    --warmbrown2: #753427;
 }
 
 * {
@@ -14,10 +15,18 @@
     transition: all 0.1s ease-in-out;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 a, p, table {
     font-family: 'Karla', sans-serif;
     font-size: 20px;
-    color: var(--brown)
+}
+
+a {
+    text-decoration: none;
 }
 
 table {
@@ -28,7 +37,7 @@ table {
 th {
     border-bottom: 2px solid var(--peach);
     border-collapse: collapse;
-    color: var(--lightbrown)
+    color: var(--warmbrown)
 }
 
 
@@ -47,7 +56,7 @@ h2 {
 h3 {
     font-family: 'Poppins';
     font-size: 23px;
-    color: var(--lightbrown);
+    color: var(--warmbrown);
 }
 
 th, td {
@@ -87,19 +96,21 @@ body {
 .top-nav a {
     float: right;
     text-align: center;
-    padding: 13px 20px;
+    margin: 10px 17px;
+    padding: 3px 10px;
     font-size: 20px;
-    text-decoration: none;
     color: var(--brown);
     display: block;
 }
 
 .top-nav a:first-child  {
+    color: var(--brown);
     margin-right: 30px;
+    border-radius: 18px;
 }
 
 .top-nav a:hover {
-    color:var(--boldred);
+    color: var(--boldred);
 }
 
 .content {
@@ -186,7 +197,27 @@ body {
     border-radius: 20px;
 }
 
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--peach);
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 12px;
+}
+
+#credit {
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 15px;
+
+    color: var(--warmbrown2)
+}
+
+.links a {
+    color: var(--warmbrown);
 }
