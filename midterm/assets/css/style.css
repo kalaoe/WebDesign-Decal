@@ -21,8 +21,15 @@ a, p, table {
 }
 
 table {
-    margin: 20px;
+    padding: 0px 100px;
+    border-spacing: 0 15px;
 }
+
+th {
+    border-bottom: 2px solid var(--peach);
+    border-collapse: collapse;
+}
+
 
 h1, h2 {
     filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.3));
@@ -102,8 +109,8 @@ body {
 }
 
 .frame {
-    max-width: 900px;
-    margin: auto;
+    max-width: 1100px;
+    margin: 0 auto;
     padding-top: 50px;
 }
 
@@ -116,7 +123,7 @@ body {
 }
 
 .background {
-    background-image: url(../img/pastabkgd.jpeg);
+    background-image: url(../img/pastabkgd.jpg);
     background-size: cover;
     
     height: 300px;
@@ -145,20 +152,14 @@ body {
 
 #img1 {
     object-fit: cover;
-    width: 375px;
-    height: 375px;
     max-width: 100%;
-    max-height: 100%;
-    border-radius: 50%;
+    height: auto;
+
     padding-left: 40px;
+    border-radius: 50%;
     filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.3));
 }
 
-table, tr {
-    border-bottom: 2px solid var(--peach);
-    border-collapse: collapse;
-}
-
-table {
-    margin-right: 50px;
+.menu table {
+    padding-bottom: 75px;
 }
