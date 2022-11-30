@@ -1,0 +1,132 @@
+:root {
+    --bgcolor: #e6e1dc;
+    --dgray: #4d4b4a;
+    --lgray: #969290;
+}
+
+* {
+    font-family: "Karla";
+    color: var(--dgray);
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--bgcolor);
+    -webkit-animation: fadeIn .5s ease-in-out;
+    animation: fadeIn .5s ease-in-out;
+}
+
+h1 {
+    font-family: "Poppins";
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 200;
+    margin-bottom: 100px;
+}
+
+.content {
+    height: 100vh;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main {
+    display: flex;
+    width: 700px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.button {
+  background-color: var(--dgray);
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 10px;
+  padding: 30px 40px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button:hover, .button:focus {
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+}
+
+.circle-button {
+    display: flex;
+    width: 300px;
+    min-width: 300px;
+    height: 300px;
+    background-color: var(--dgray);
+    
+    justify-content: center;
+    align-items: center;
+
+    margin: 50px 75px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.circle-button:hover {
+    animation: grow-shrink 0.5s infinite alternate;
+}
+
+.circle-button h1 {
+    font-size: 100px;
+    font-weight: 200;
+    line-height: 1.2;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    margin: 50px;
+}
+
+.circle-button h2 {
+    font-size: 50px;
+    font-weight: 200;
+    line-height: 1.2;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    margin: 50px;
+}
+
+@keyframes grow-shrink {
+    from {
+        transform: scale(1);
+    } to {
+        transform: scale(1.1);
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { 
+        opacity: 0;
+    } to { 
+        opacity: 1; 
+    }
+}

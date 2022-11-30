@@ -1,6 +1,41 @@
 <!DOCTYPE html>
+
 <html>
+    <head>
+        <!-- css/js files -->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+        <script src="assets/js/script.js"></script>
+
+        <!-- fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+        <!-- favicon -->
+        <link rel="icon" type="image/x-icon" href="assets/img/icon.png">
+
+        <title>Mission</title>
+    </head>
+
     <body>
-        FINAL
+        <div class="content">
+            <div class="main">
+                <h1>MISSION</h1>
+                <h2><span class="typed"></span></h2>
+            </div>
+            
+            <a href="./page2.html" class="circle-button"><h1>GO</h1></a>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+        <script>
+
+            var typed = new Typed(".typed", {
+                strings: ["Get to work.", "Beat procrastination.", "Clear that to-do list."],
+                typeSpeed: 90,
+                backSpeed: 70, 
+                loop: true
+            })
+        </script>
     </body>
 </html>
